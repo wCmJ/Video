@@ -1,0 +1,12 @@
+RGB color is tough to work with. if I need to lower the brightness uniformly on an image, I need to do it to all 3 colors.
+There is a lot of redundancy in the data. To combat the redundancy, there is a different way of storing the info called YCbCr,
+which breaks the signal down into a Y, or luminance channel, and 2 channels that store color info without brightness info
+a Blue channel and a Red channel that don't contain any brightness.
+a 8-bit YUV signal:
+    Y:  0 - 255
+    Cb: -128 - 128
+    Cr: -128 - 128
+    
+most major video formats: MPEG-2, AVCHD, DVCPROHD, H.264, XDCAM - all use YUV color space.
+the pixels are all stored using some variant of Y, Cb, Cr.
+
